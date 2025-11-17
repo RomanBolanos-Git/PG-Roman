@@ -1,271 +1,451 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="description" content="Ecopetrol - Líder en energía sostenible en Colombia">
-        <meta name="keywords" content="ecopetrol, petróleo, gas, energía, colombia, neiva">
-        <title>Ecopetrol Neiva</title>
-        <link rel="icon" type="image/png" href="img/logo-blanco.png">
-        <link rel="shortcut icon" type="image/png" href="img/logo-blanco.png">
-        <link rel="apple-touch-icon" href="img/logo-blanco.png">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="style.css">
-    </head>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Ecopetrol - Líder en energía sostenible en Colombia">
+    <meta name="keywords" content="ecopetrol, petróleo, gas, energía, colombia, neiva">
+    <title>Ecopetrol Neiva</title>
+    <link rel="icon" type="image/png" href="img/logo-blanco.png">
+    <link rel="shortcut icon" type="image/png" href="img/logo-blanco.png">
+    <link rel="apple-touch-icon" href="img/logo-blanco.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="css/normalize.css">
+    
+    <!-- Tu CSS personalizado -->
+    <link rel="stylesheet" href="style.css">
+</head>
 
-    <body>
-        <header>
-            <div class="container">
-                <a href="index.html">
-                    <img src="img/logo.png" class="logo">
-                </a>
-                <nav>
-                    <a href="#inicio">Inicio</a>
-                    <a href="#nosotros">Nosotros</a>
-                    <a href="#servicios">Servicios</a>
-                    <a href="#galeria">Galería</a>
-                    <a href="#contactenos">Contáctenos</a>
-                </nav>
+<body>
+    <!-- Navbar Bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.png" alt="Ecopetrol" class="logo-navbar">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#nosotros">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicios">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#galeria">Galería</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contactenos">Contáctenos</a>
+                    </li>
+                </ul>
             </div>
-        </header>
-        
-        <main>
-            <section id="inicio">
-                <img src="img/bannerprincipal.jpg" alt="Ecopetrol">
-                <div class="bloque-inicio">
-                    <h1>Bienvenidos a Ecopetrol Neiva</h1>
-                    <p>Somos la principal empresa de energía en Colombia, comprometidos con 
-                       el desarrollo sostenible y la transformación energética del país. 
-                       Operamos en exploración, producción, transporte y refinación de hidrocarburos.
+        </div>
+    </nav>
+
+    <main>
+        <!-- Sección Inicio -->
+        <section id="inicio">
+            <div class="banner-container">
+                <img src="img/bannerprincipal.jpg" class="banner-img" alt="Ecopetrol Banner">
+                <div class="banner-overlay">
+                    <h1 class="display-5 fw-bold">Bienvenidos a Ecopetrol Neiva</h1>
+                    <p class="lead">
+                        Somos la principal empresa de energía en Colombia, comprometidos con 
+                        el desarrollo sostenible y la transformación energética del país. 
+                        Operamos en exploración, producción, transporte y refinación de hidrocarburos.
                     </p>
-                    <a href="#nosotros" class="boton boton-azul">Ver más</a>
+                    <a href="#nosotros" class="btn btn-primary btn-lg">
+                        Ver más <i class="bi bi-arrow-right ms-2"></i>
+                    </a>
                 </div>
-            </section>
-            
-            <section id="nosotros" class="seccion">
-                <div class="container">
-                    <h2>Sobre Nosotros</h2>
-                    <p>Ecopetrol es la empresa más grande de Colombia y una de las principales 
-                       petroleras de América Latina. Con presencia en Neiva y el departamento 
-                       del Huila, desarrollamos proyectos de exploración y producción que impulsan 
-                       el crecimiento económico de la región. Nuestro compromiso es generar valor 
-                       sostenible para Colombia y sus habitantes.
+            </div>
+        </section>
+
+        <!-- Sección Nosotros -->
+        <section id="nosotros" class="py-5">
+            <div class="container">
+                <h2 class="text-center text-white mb-4">
+                    <i class="bi bi-building me-2"></i>Sobre Nosotros
+                </h2>
+                <p class="text-center text-white fs-5 mx-auto">
+                    Ecopetrol es la empresa más grande de Colombia y una de las principales 
+                    petroleras de América Latina. Con presencia en Neiva y el departamento 
+                    del Huila, desarrollamos proyectos de exploración y producción que impulsan 
+                    el crecimiento económico de la región. Nuestro compromiso es generar valor 
+                    sostenible para Colombia y sus habitantes.
+                </p>
+            </div>
+        </section>
+
+        <!-- Sección Servicios -->
+        <section id="servicios" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">
+                    <i class="bi bi-gear-fill me-2"></i>Nuestros Servicios
+                </h2>
+                <div class="row g-4">
+                    <!-- Servicio 1: Exploración -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 shadow-sm border-0 servicio-card">
+                            <div class="servicio-img-wrapper">
+                                <img src="img/servicio1.jpg" class="servicio-img" alt="Exploración">
+                            </div>
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="card-title">
+                                    <i class="bi bi-search text-primary me-2"></i>Exploración
+                                </h3>
+                                <p class="card-text flex-grow-1">
+                                    Utilizamos tecnología de punta para identificar nuevos yacimientos 
+                                    de petróleo y gas. Nuestro equipo de geólogos e ingenieros trabaja 
+                                    en el análisis sísmico y la perforación exploratoria en el Huila y 
+                                    otras regiones del país.
+                                </p>
+                                <a href="#" class="btn btn-outline-primary mt-auto">
+                                    Ver más <i class="bi bi-arrow-right-short"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Servicio 2: Producción -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 shadow-sm border-0 servicio-card">
+                            <div class="servicio-img-wrapper">
+                                <img src="img/servicio2.jpg" class="servicio-img" alt="Producción">
+                            </div>
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="card-title">
+                                    <i class="bi bi-droplet-fill text-primary me-2"></i>Producción
+                                </h3>
+                                <p class="card-text flex-grow-1">
+                                    Operamos pozos productores en diferentes campos petroleros del país. 
+                                    Implementamos técnicas de extracción eficientes y seguras, garantizando 
+                                    la máxima productividad con el menor impacto ambiental posible.
+                                </p>
+                                <a href="#" class="btn btn-outline-primary mt-auto">
+                                    Ver más <i class="bi bi-arrow-right-short"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Servicio 3: Refinación -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 shadow-sm border-0 servicio-card">
+                            <div class="servicio-img-wrapper">
+                                <img src="img/servicio3.jpg" class="servicio-img" alt="Refinación">
+                            </div>
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="card-title">
+                                    <i class="bi bi-arrow-repeat text-primary me-2"></i>Refinación
+                                </h3>
+                                <p class="card-text flex-grow-1">
+                                    Transformamos el crudo en combustibles y productos derivados del 
+                                    petróleo. Nuestras refinerías cumplen con los más altos estándares 
+                                    internacionales de calidad, seguridad industrial y protección ambiental.
+                                </p>
+                                <a href="#" class="btn btn-outline-primary mt-auto">
+                                    Ver más <i class="bi bi-arrow-right-short"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Galería -->
+        <section id="galeria" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">
+                    <i class="bi bi-images me-2"></i>Galería
+                </h2>
+            </div>
+            <div class="container-fluid px-0">
+                <div class="row g-0">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="galeria-item">
+                            <img src="img/galeria1.jpg" class="galeria-img" alt="Plataforma Petrolera">
+                            <div class="galeria-overlay">
+                                <h4><i class="bi bi-geo-alt-fill me-2"></i>Plataforma Petrolera</h4>
+                                <p class="mb-0">Infraestructura offshore</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="galeria-item">
+                            <img src="img/galeria2.jpg" class="galeria-img" alt="Torre de Perforación">
+                            <div class="galeria-overlay">
+                                <h4><i class="bi bi-bullseye me-2"></i>Torre de Perforación</h4>
+                                <p class="mb-0">Operaciones en tierra</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="galeria-item">
+                            <img src="img/galeria3.jpg" class="galeria-img" alt="Refinería">
+                            <div class="galeria-overlay">
+                                <h4><i class="bi bi-building-gear me-2"></i>Refinería</h4>
+                                <p class="mb-0">Procesamiento de crudo</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="galeria-item">
+                            <img src="img/galeria4.jpg" class="galeria-img" alt="Oleoducto">
+                            <div class="galeria-overlay">
+                                <h4><i class="bi bi-bezier2 me-2"></i>Oleoducto</h4>
+                                <p class="mb-0">Red de transporte</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="galeria-item">
+                            <img src="img/galeria5.jpg" class="galeria-img" alt="Tanques">
+                            <div class="galeria-overlay">
+                                <h4><i class="bi bi-archive-fill me-2"></i>Tanques de Almacenamiento</h4>
+                                <p class="mb-0">Capacidad de reserva</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="galeria-item">
+                            <img src="img/galeria6.jpg" class="galeria-img" alt="Equipo">
+                            <div class="galeria-overlay">
+                                <h4><i class="bi bi-people-fill me-2"></i>Equipo en Campo</h4>
+                                <p class="mb-0">Personal especializado</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Contacto -->
+        <section id="contactenos" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">
+                    <i class="bi bi-envelope-fill me-2"></i>Contáctenos
+                </h2>
+                <div class="row g-4">
+                    <!-- Formulario (30%) -->
+                    <div class="col-lg-4">
+                        <div class="card shadow-sm border-0 h-100">
+                            <div class="card-body p-4">
+                                <h3 class="mb-4">
+                                    <i class="bi bi-chat-dots-fill text-primary me-2"></i>Envíanos un mensaje
+                                </h3>
+                                <form action="" method="post">
+                                    <div class="mb-3">
+                                        <label for="nombre" class="form-label">
+                                            <i class="bi bi-person-fill me-1"></i>Nombre:
+                                        </label>
+                                        <input type="text" class="form-control" id="nombre" name="nombre" 
+                                               placeholder="Tu nombre completo" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label">
+                                            <i class="bi bi-envelope-fill me-1"></i>Email:
+                                        </label>
+                                        <input type="email" class="form-control" id="email" name="email" 
+                                               placeholder="tu@email.com" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="mensaje" class="form-label">
+                                            <i class="bi bi-chat-left-text-fill me-1"></i>Mensaje:
+                                        </label>
+                                        <textarea class="form-control" id="mensaje" name="mensaje" rows="6" 
+                                                  placeholder="Escribe tu mensaje aquí..." required></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary w-100 btn-lg">
+                                        <i class="bi bi-send-fill me-2"></i>Enviar Mensaje
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Información con Mapa (70%) -->
+                    <div class="col-lg-8">
+                        <div class="card shadow-sm border-0 h-100">
+                            <div class="card-body p-4">
+                                <h3 class="mb-4">
+                                    <i class="bi bi-info-circle-fill text-primary me-2"></i>Información de Contacto
+                                </h3>
+                                
+                                <div class="info-contacto-wrapper">
+                                    <!-- Info -->
+                                    <div class="info-contacto-left">
+                                        <div class="mb-3">
+                                            <h5>
+                                                <i class="bi bi-geo-alt-fill text-primary me-2"></i>Dirección:
+                                            </h5>
+                                            <p class="ms-4">
+                                                Ecopetrol - Centro de Atención<br>
+                                                Neiva, Huila, Colombia
+                                            </p>
+                                        </div>
+                                        
+                                        <div class="mb-3">
+                                            <h5>
+                                                <i class="bi bi-telephone-fill text-primary me-2"></i>Teléfono:
+                                            </h5>
+                                            <p class="ms-4">
+                                                <a href="tel:018000915556">01-800-0915556</a>
+                                            </p>
+                                        </div>
+                                        
+                                        <div class="mb-3">
+                                            <h5>
+                                                <i class="bi bi-envelope-at-fill text-primary me-2"></i>Email:
+                                            </h5>
+                                            <p class="ms-4">
+                                                <a href="mailto:participacion.ciudadana@ecopetrol.com.co">
+                                                    participacion.ciudadana@ecopetrol.com.co
+                                                </a>
+                                            </p>
+                                        </div>
+                                        
+                                        <div class="mb-0">
+                                            <h5>
+                                                <i class="bi bi-clock-fill text-primary me-2"></i>Horario:
+                                            </h5>
+                                            <p class="ms-4">Lunes a Viernes: 8:00 AM - 5:00 PM</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Separador -->
+                                    <div class="vertical-separator d-none d-lg-block"></div>
+                                    
+                                    <!-- Mapa -->
+                                    <div class="info-contacto-right">
+                                        <div class="mapa-wrapper">
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255012.44656903722!2d-75.38843247371148!2d2.9392767022951634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3b74f22a4eecb5%3A0x55a0e48405369cda!2sEcopetrol%20-%20Centro%20de%20Atenci%C3%B3n%20Local%20Neiva!5e0!3m2!1ses!2sco!4v1761531902928!5m2!1ses!2sco"
+                                                    width="100%" height="100%" style="border:0;" 
+                                                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                                            </iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light pt-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <img src="img/logo-blanco.png" alt="Ecopetrol Logo" class="logo-footer mb-3">
+                    <p class="small">
+                        Ecopetrol S.A. es la empresa más grande de Colombia con presencia 
+                        en toda la cadena de valor del sector de hidrocarburos. 
+                        Comprometidos con el desarrollo sostenible del país.
                     </p>
                 </div>
-            </section> 
-            
-            <section id="servicios" class="seccion">
-                <div class="container">
-                    <h2>Nuestros Servicios</h2>
-                    <div class="row">
-                        <div class="columna columna-33">
-                            <div class="bloque-servicio">
-                                <div class="bloque-img-servicio cuadrado-perfecto">
-                                    <img src="img/servicio1.jpg" alt="Exploración">
-                                </div>
-                                <div class="bloque-contenido-servicio">
-                                    <h3>Exploración</h3>
-                                    <p>Utilizamos tecnología de punta para identificar nuevos yacimientos 
-                                       de petróleo y gas. Nuestro equipo de geólogos e ingenieros trabaja 
-                                       en el análisis sísmico y la perforación exploratoria en el Huila y 
-                                       otras regiones del país.
-                                    </p>
-                                    <a href="#" class="boton boton-blanco">Ver más</a>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="columna columna-33">
-                            <div class="bloque-servicio">
-                                <div class="bloque-img-servicio cuadrado-perfecto">
-                                    <img src="img/servicio2.jpg" alt="Producción">
-                                </div>
-                                <div class="bloque-contenido-servicio">
-                                    <h3>Producción</h3>
-                                    <p>Operamos pozos productores en diferentes campos petroleros del país. 
-                                       Implementamos técnicas de extracción eficientes y seguras, garantizando 
-                                       la máxima productividad con el menor impacto ambiental posible.
-                                    </p>
-                                    <a href="#" class="boton boton-blanco">Ver más</a>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="columna columna-33">
-                            <div class="bloque-servicio">
-                                <div class="bloque-img-servicio cuadrado-perfecto">
-                                    <img src="img/servicio3.jpg" alt="Refinación">
-                                </div>
-                                <div class="bloque-contenido-servicio">
-                                    <h3>Refinación</h3>
-                                    <p>Transformamos el crudo en combustibles y productos derivados del 
-                                       petróleo. Nuestras refinerías cumplen con los más altos estándares 
-                                       internacionales de calidad, seguridad industrial y protección ambiental.
-                                    </p>
-                                    <a href="#" class="boton boton-blanco">Ver más</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="mb-3">
+                        <i class="bi bi-link-45deg me-2"></i>Enlaces Rápidos
+                    </h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <a href="#inicio" class="text-light text-decoration-none">
+                                <i class="bi bi-chevron-right me-1"></i>Inicio
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#nosotros" class="text-light text-decoration-none">
+                                <i class="bi bi-chevron-right me-1"></i>Nosotros
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#servicios" class="text-light text-decoration-none">
+                                <i class="bi bi-chevron-right me-1"></i>Servicios
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#galeria" class="text-light text-decoration-none">
+                                <i class="bi bi-chevron-right me-1"></i>Galería
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-            </section>
-            
-            <section id="galeria" class="seccion">
-                <div class="container">
-                    <h2>Galería</h2>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="mb-3">
+                        <i class="bi bi-telephone-fill me-2"></i>Contacto
+                    </h5>
+                    <ul class="list-unstyled small">
+                        <li class="mb-2">
+                            <i class="bi bi-envelope-fill me-2"></i>
+                            participacion.ciudadana@ecopetrol.com.co
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-phone-fill me-2"></i>
+                            01-800-0915556
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-geo-alt-fill me-2"></i>
+                            Ecopetrol - Centro de Atención<br>
+                            <span class="ms-4">Neiva, Huila</span>
+                        </li>
+                    </ul>
                 </div>
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="columna columna-33">
-                            <div class="cuadrado-perfecto">
-                                <img src="img/galeria1.jpg" alt="Plataforma Petrolera">
-                                <div class="texto-img">
-                                    <h4>Plataforma Petrolera</h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="columna columna-33">
-                            <div class="cuadrado-perfecto">
-                                <img src="img/galeria2.jpg" alt="Torre de Perforación">
-                                <div class="texto-img">
-                                    <h4>Torre de Perforación</h4>
-                                </div>
-                            </div>                          
-                        </div>
-                        <div class="columna columna-33">
-                            <div class="cuadrado-perfecto">
-                                <img src="img/galeria3.jpg" alt="Refinería">
-                                <div class="texto-img">
-                                    <h4>Refinería</h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="columna columna-33">
-                            <div class="cuadrado-perfecto">
-                                <img src="img/galeria4.jpg" alt="Oleoducto">
-                                <div class="texto-img">
-                                    <h4>Oleoducto</h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="columna columna-33">
-                            <div class="cuadrado-perfecto">
-                                <img src="img/galeria5.jpg" alt="Tanques de Almacenamiento">
-                                <div class="texto-img">
-                                    <h4>Tanques de Almacenamiento</h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="columna columna-33">
-                            <div class="cuadrado-perfecto">
-                                <img src="img/galeria6.jpg" alt="Equipo en Campo">
-                                <div class="texto-img">
-                                    <h4>Equipo en Campo</h4>
-                                </div>
-                            </div>
-                        </div>                   
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="mb-3">
+                        <i class="bi bi-share-fill me-2"></i>Síguenos
+                    </h5>
+                    <div class="d-flex gap-3 mb-3">
+                        <a href="https://www.instagram.com/ecopetrol_sa" target="_blank" 
+                           class="btn btn-outline-light btn-sm rounded-circle social-btn">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/ecopetrol" target="_blank" 
+                           class="btn btn-outline-light btn-sm rounded-circle social-btn">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                        <a href="https://twitter.com/ecopetrol_sa" target="_blank" 
+                           class="btn btn-outline-light btn-sm rounded-circle social-btn">
+                            <i class="bi bi-twitter-x"></i>
+                        </a>
                     </div>
-                </div>
-            </section>
-            
-            <section id="contactenos" class="seccion">
-                <div class="container">
-                    <h2>Contáctenos</h2>
-                    <div class="row">
-                        <!-- COLUMNA IZQUIERDA FORMULARIO -->
-                        <div class="columna columna-50">
-                            <form action="" method="post">
-                                <div class="form-block">
-                                    <label>Nombre:</label>
-                                    <input type="text" name="nombre" placeholder="Tu nombre completo" required>
-                                </div>
-                                <div class="form-block">
-                                    <label>Email:</label>
-                                    <input type="email" name="email" placeholder="tu@email.com" required>
-                                </div>
-                                <div class="form-block">
-                                    <label>Mensaje:</label>
-                                    <textarea name="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
-                                </div>
-                                <div class="form-block">
-                                    <input type="submit" value="Enviar" class="boton boton-azul">
-                                </div>
-                            </form>
-                        </div>
-                        
-                        <!-- COLUMNA DERECHA INFORMACIÓN Y MAPA -->
-                        <div class="columna columna-50">
-                            <div class="info-contacto">
-                                <h3>Información de Contacto</h3>
-                                <p><strong>Dirección:</strong><br>
-                                   Ecopetrol - Centro de Atención<br>
-                                   Neiva, Huila, Colombia
-                                </p>
-                                <p><strong>Teléfono:</strong><br>
-                                   01-800-0915556
-                                </p>
-                                <p><strong>Email:</strong><br>
-                                   participacion.ciudadana@ecopetrol.com.co
-                                </p>
-                                <p><strong>Horario:</strong><br>
-                                   Lunes a Viernes: 8:00 AM - 5:00 PM
-                                </p>
-                            </div>
-                            
-                            <!-- Mapa dentro del cuadro -->
-                            <div class="mapa-contacto">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255012.44656903722!2d-75.38843247371148!3d2.9392767022951634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3b74f22a4eecb5%3A0x55a0e48405369cda!2sEcopetrol%20-%20Centro%20de%20Atenci%C3%B3n%20Local%20Neiva!5e0!3m2!1ses!2sco!4v1761531902928!5m2!1ses!2sco"  
-                                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" 
-                                referrerpolicy="no-referrer-when-downgrade"></iframe>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-        
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="columna columna-25">
-                        <img src="img/logo-blanco.png" class="logo-footer">
-                        <p>Ecopetrol S.A. es la empresa más grande de Colombia con presencia 
-                           en toda la cadena de valor del sector de hidrocarburos. 
-                           Comprometidos con el desarrollo sostenible del país.
-                        </p>
-                    </div>
-                    <div class="columna columna-25">
-                        <h3>Enlaces Rápidos</h3>
-                        <ul>
-                            <li><a href="#inicio">Inicio</a></li>
-                            <li><a href="#nosotros">Nosotros</a></li>
-                            <li><a href="#servicios">Servicios</a></li>
-                            <li><a href="#galeria">Galería</a></li>
-                        </ul>
-                    </div>
-                    <div class="columna columna-25">
-                        <h3>Contacto</h3>
-                        <ul>
-                            <li>participacion.ciudadana@ecopetrol.com.co</li>
-                            <li>01-800-0915556</li>
-                            <li>Ecopetrol - Centro de Atención<br>Neiva, Huila</li>
-                        </ul>
-                    </div>
-                    <div class="columna columna-25">
-                        <h3>Síguenos</h3>
-                        <ul>
-                            <li><a href="https://www.instagram.com/ecopetrol_sa" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-                            <li><a href="https://www.linkedin.com/company/ecopetrol" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-                            <li><a href="https://twitter.com/ecopetrol_sa" target="_blank" rel="noopener noreferrer">X</a></li>
-                        </ul>
-                    </div>
+                    <p class="small mb-0">
+                        <i class="bi bi-shield-fill-check me-2 text-success"></i>
+                        Empresa certificada ISO 9001
+                    </p>
                 </div>
             </div>
-            <div class="barra-footer">
-                &copy; Derechos Reservados - Ecopetrol 2025
-            </div>
-        </footer>
-    </body>
+        </div>
+        <div class="text-center py-3 mt-4" style="background-color: rgba(0,0,0,0.2);">
+            <p class="mb-0 small">
+                <i class="bi bi-c-circle me-1"></i>
+                Derechos Reservados - Ecopetrol 2025
+            </p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
