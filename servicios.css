@@ -1,0 +1,245 @@
+/* 
+   ESTILOS PARA PÁGINAS DE SERVICIOS
+   Este archivo CSS es específico para las páginas individuales de servicios
+*/
+
+/* Banner Superior de Servicios */
+.servicio-banner {
+    margin-top: 4.375rem; /* 70px - altura del navbar */
+    height: 25rem; /* 400px */
+    background: linear-gradient(rgba(30, 58, 21, 0.85), rgba(0, 0, 0, 0.85)), 
+                url('img/servicio1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* Banner específico para Producción */
+.servicio-banner-produccion {
+    background: linear-gradient(rgba(30, 58, 21, 0.85), rgba(0, 0, 0, 0.85)), 
+                url('img/servicio2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Banner específico para Refinación */
+.servicio-banner-refinacion {
+    background: linear-gradient(rgba(30, 58, 21, 0.85), rgba(0, 0, 0, 0.85)), 
+                url('img/servicio3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.servicio-banner-overlay {
+    width: 100%;
+}
+
+/* Breadcrumb personalizado */
+.breadcrumb {
+    background-color: transparent;
+    padding: 0;
+    margin-bottom: 1.5rem;
+}
+
+.breadcrumb-item a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.breadcrumb-item a:hover {
+    color: var(--ecopetrol-orange);
+}
+
+.breadcrumb-item.active {
+    color: white;
+    font-weight: 500;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* Imágenes destacadas */
+.servicio-imagen-destacada {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 0.625rem;
+    box-shadow: 0 0.625rem 1.875rem rgba(0, 0, 0, 0.15);
+}
+
+.servicio-imagen-destacada img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.servicio-imagen-destacada:hover img {
+    transform: scale(1.03);
+}
+
+.servicio-imagen-secundaria {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 0.625rem;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+}
+
+.servicio-imagen-secundaria img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Iconos de proceso grande */
+.proceso-icon {
+    width: 5rem;
+    height: 5rem;
+    background: linear-gradient(135deg, var(--ecopetrol-green), var(--ecopetrol-light-green));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    box-shadow: 0 0.25rem 0.75rem rgba(30, 58, 21, 0.3);
+}
+
+.proceso-icon i {
+    font-size: 2.5rem;
+    color: white;
+}
+
+/* Iconos de proceso pequeños */
+.proceso-icon-small {
+    width: 3.5rem;
+    height: 3.5rem;
+    background: linear-gradient(135deg, var(--ecopetrol-green), var(--ecopetrol-light-green));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.proceso-icon-small i {
+    font-size: 1.5rem;
+    color: white;
+}
+
+/* Cards de proceso con hover */
+.proceso-card {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.proceso-card:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.proceso-card:hover .proceso-icon {
+    transform: rotate(360deg);
+    transition: transform 0.6s ease;
+}
+
+/* Listas personalizadas */
+ul {
+    padding-left: 1.25rem;
+}
+
+ul li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+/* Títulos de sección */
+h2 {
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 5rem;
+    height: 0.1875rem;
+    background: linear-gradient(90deg, transparent, var(--ecopetrol-orange), transparent);
+}
+
+/* Ajustes para móvil */
+@media (max-width: 768px) {
+    .servicio-banner {
+        height: 18.75rem; /* 300px */
+        background-attachment: scroll;
+    }
+    
+    .servicio-banner h1 {
+        font-size: 2rem;
+    }
+    
+    .proceso-icon {
+        width: 4rem;
+        height: 4rem;
+    }
+    
+    .proceso-icon i {
+        font-size: 2rem;
+    }
+    
+    .btn-lg {
+        font-size: 1rem;
+        padding: 0.75rem 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .servicio-banner {
+        height: 15.625rem; /* 250px */
+    }
+    
+    .servicio-banner h1 {
+        font-size: 1.5rem;
+    }
+    
+    .servicio-banner .lead {
+        font-size: 1rem;
+    }
+}
+
+/* Animaciones de entrada */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(2rem);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card,
+.servicio-imagen-destacada,
+.servicio-imagen-secundaria {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* Espaciado consistente */
+section {
+    padding: 3rem 0;
+}
+
+@media (min-width: 768px) {
+    section {
+        padding: 5rem 0;
+    }
+}
